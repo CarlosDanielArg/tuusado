@@ -1,0 +1,254 @@
+:root {
+    --color-fondo: #ececf8;
+    --color-texto-oscuro: #2a2a2c;
+    --color-texto-claro: #ececf8;
+    --color-fondo-botones: #4348bd;
+    --color-fondo-botones-hover-main: #5c5fb8;
+    --color-fondo-botones-hover-header: #afb1f7;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body, html {
+    max-width: 980px;
+    background-color: var(--color-fondo);
+    margin: 0 auto;
+}
+
+/* estilo del header */
+header, footer {
+    background-color: var(--color-fondo) ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-logo {
+    display: inline-block;
+    height: 80px;
+    width: 80px;
+    padding-left: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-logo img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.header-menubar {
+    left: auto;
+    position: relative;
+    top: auto;
+    width: auto;
+    display: inline-block;
+}
+
+.header-menubar ul {
+    list-style: none;
+}
+
+.header-menubar ul:first-child {
+    padding-right: 3rem;
+}
+
+.header-menubar li {
+    float: left;
+    font-weight: 700;
+    text-align: center;
+    padding: 0 1rem;
+}
+
+.header-menubar a {
+    text-decoration: none;
+    color: var(--color-texto-oscuro);
+    font-size: 1rem;
+}
+
+.header-menubar a:hover {
+    background-color: var(--color-fondo-botones-hover-header);
+}
+
+/* estilo del main */
+.banner {
+    background-image: url(../img/fondo_index.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    box-shadow: inset 0 0 0 2000px rgba(84, 84, 84, 0.5);
+}
+.texto-banner, .botones-banner {
+    height: 50%;
+}
+
+.texto-banner h1 {
+    color: var(--color-texto-claro);
+    font-size: 5rem;
+    padding: 2rem;
+}
+
+.texto-banner h2 {
+    color: var(--color-texto-claro);
+    font-size: 2.5rem;
+    padding: 2rem 10rem;
+}
+
+.botones-banner ul {
+    height: 80%;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+.botones-banner ul a {
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    width: 80px;
+    color: var(--color-texto-claro);
+    background-color: var(--color-fondo-botones);
+    padding: 0.8rem;
+    border-radius: 50%;
+}
+
+.botones-banner ul a:hover {
+    background-color: var(--color-fondo-botones-hover-main);
+}
+
+.publicar {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 2rem 0;
+}
+
+.publicar .publicar-texto {
+    text-align: center;
+    color: var(--color-texto-oscuro);
+}
+
+.publicar .publicar-enlace{
+    display: flex;
+    justify-content: center;
+}
+
+.publicar .publicar-enlace a {
+    transition: transform 0.2s;
+}
+
+.publicar .publicar-enlace a:hover {
+    transform: rotate(10deg) scale(1);
+}
+
+#automoviles h2, #camionetas h2, #utilitarios h2, #motos h2{
+    color: var(--color-texto-oscuro);
+    padding: 1rem;
+}
+
+.publicaciones-recientes {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.publicacion {
+    display: flex;
+    flex-direction: row;
+}
+
+.publicacion .foto {
+    padding: 1rem;
+    width: 300px;
+    height: 300px;
+}
+
+.publicacion .foto img {
+    border-radius: 10px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.publicacion .texto {
+    padding: 1rem;
+}
+
+.publicacion .texto p {
+    font-size: 1.2rem;
+}
+
+.publicacion .texto p:first-child {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.publicacion .texto .precio {
+    color: rgb(255, 102, 0);
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.publicacion .texto .mas-info {
+    display: inline-block;
+    background-color: var(--color-fondo-botones);
+    color: var(--color-texto-claro);
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 0.5rem;
+    margin: 2rem 0 0 0;
+}
+
+.publicacion .texto .mas-info:hover {
+    background-color: var(--color-fondo-botones-hover-main);
+    padding: 0.6rem;
+    font-size: 1rem;
+}
+
+/* estilo del footer */
+footer ul {
+    list-style: none;
+}
+
+.redes-sociales {
+    position: relative;
+    top: auto;
+    width: 50vw;
+    display: inline-block;
+}
+
+.contacto {
+    padding-right: 2rem;
+    width: 30vh;
+}
+
+.redes-sociales li {
+    float: left;
+    margin-right: 1rem;
+}
+
+/* animaciones */
+.header-logo {
+    animation-name: header-logo-animation;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+}
+
+@keyframes header-logo-animation {
+    0% {
+        transform: translateX(100%);
+        opacity: 1;
+    }
+    80% {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(0%);
+        opacity: 0;
+    }
+}
