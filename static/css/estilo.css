@@ -279,11 +279,9 @@ footer ul {
         transform: translateX(0%);
         opacity: 0;
     }
-
-    
 }
 
-@media only screen and (min-width: 451px) and (max-width: 750px) {
+@media only screen and (min-width: 451px) and (max-width: 755px) {
     .header-menubar {
         display: none;
     }
