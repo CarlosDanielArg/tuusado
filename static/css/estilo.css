@@ -17,6 +17,7 @@ body, html {
     max-width: 980px;
     background-color: var(--color-fondo);
     margin: 0 auto;
+    font-family: 'Nunito', sans-serif;
 }
 
 /* estilo del header */
@@ -48,6 +49,8 @@ header, footer {
 
 .header-menubar {
     display: inline-block;
+    /* Agrega una sombra suave al texto */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
 .header-menubar ul {
@@ -63,6 +66,8 @@ header, footer {
     font-weight: 700;
     text-align: center;
     padding: 0 1rem;
+    /* Agrega una transición suave para la animación */
+    transition: transform 0.3s ease, text-shadow 0.3s ease;
 }
 
 .header-menubar a {
@@ -71,9 +76,13 @@ header, footer {
     font-size: 1rem;
 }
 
-.header-menubar a:hover {
-    background-color: var(--color-fondo-botones-hover-header);
+/* Aplica los estilos de hover */
+.header-menubar li:hover {
+    /* Agrega un efecto de difuminado y transformación al hacer hover */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    transform: translateY(-2px);
 }
+
 
 /* estilo del main */
 .banner {
@@ -112,20 +121,25 @@ header, footer {
     align-items: flex-end;
 }
 
+/* Estilos de los botones */
 .botones-banner ul a {
     text-decoration: none;
     text-align: center;
     display: inline-block;
-    width: 80px;
+    width: 120px; /* Ajusta el ancho según tus preferencias */
+    height: 40px; /* Ajusta la altura según tus preferencias */
+    line-height: 40px; /* Centra el texto verticalmente */
     color: var(--color-texto-claro);
     background-color: var(--color-fondo-botones);
-    padding: 0.8rem;
-    border-radius: 50%;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 .botones-banner ul a:hover {
     background-color: var(--color-fondo-botones-hover-main);
+    color: var(--color-texto-oscuro);
 }
+
 
 .publicar {
     display: flex;
