@@ -369,6 +369,16 @@ footer ul {
 }
 
 @media only screen and (max-width: 450px) {
+    .botones-banner ul {
+        flex-direction: column; /* Apilar los botones verticalmente */
+        align-items: center; /* Centrar los botones horizontalmente */
+    }
+
+    .botones-banner ul a {
+        width: 200px; /* Ancho fijo para los botones */
+        margin-bottom: 10px; /* Agregar un espacio entre los botones */
+    }
+
     .header-menubar {
         display: none;
     }
