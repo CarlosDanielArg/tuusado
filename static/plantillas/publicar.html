@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- enlace bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" 
+        rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" 
+        crossorigin="anonymous">
+    <!-- enlace al css local -->
+    <link rel="stylesheet" href="../css/estilo.css">
+    <link rel="icon" href="../../favicon.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/fa04600604.js" crossorigin="anonymous"></script>
+    <title>Tu Usado</title>
+</head>
+<body>
+    <header>
+        <div class="header-logo logo">
+            <a href="../../index.html" title="Tu Usado - Ir al inicio">
+                <img src="../img/logoTU.png" alt="logo empresa" >
+            </a>
+        </div>
+        <nav class="header-menubar">
+            <ul>
+                <li><a href="#">Automóviles</a></li>
+                <li><a href="#">Camionetas</a> </li>
+                <li><a href="#">Utilitarios</a></li>
+                <li><a href="#">Motos</a></li>
+                <li><a href="#">Publica tu usado</a></li>
+            </ul>
+        </nav>
+        <nav class="header-menubar-desplegable">
+            <a href="#"><i class="fas fa-solid fa-bars"></i></a>
+            <ul class="contenido-desplegable">
+                <li><a href="#">Automóviles</a></li>
+                <li><a href="#">Camionetas</a> </li>
+                <li><a href="#">Utilitarios</a></li>
+                <li><a href="#">Motos</a></li>
+                <li><a href="#">Publica tu usado</a></li>
+            </ul>    
+        </nav>
+    </header>
+    <main>
+        <section class="container bg-light mt-5 py-5">
+            <h1 class="display-3 text-center mb-5 mx-auto">Publicá grátis tu anuncio</h1>
+            <form action="">
+                <div class="border border-primary bg-secondary text-white mb-2 rounded">
+                    <div class="col-6 mx-auto mb-3">
+                        <label for="form-label" class="">Rubro</label>
+                        <select name="rubro" class="form-select" required>
+                            <option value="automovil">Automóvil</option>
+                            <option value="camioneta">Camioneta</option>
+                            <option value="utilitario">Utilitario</option>
+                            <option value="moto">Moto</option>
+                        </select>
+                    </div>
+                    <div class="col-6 mx-auto mb-3">
+                        <label for="marca" class="form-label">Marca</label>
+                        <input type="text" class="form-control" id="marca" placeholder="Ingresá la marca..." required>
+                    </div>
+                    <div class="col-6 mx-auto mb-3">
+                        <label for="modelo" class="form-label">Modelo</label>
+                        <input type="text" class="form-control" id="model" placeholder="Ingresá el modelo..." required>
+                    </div>
+                    <div class="col-6 mx-auto mb-3">
+                        <label for="anio" class="form-label">Año</label>
+                        <input type="number" class="form-control" id="anio" placeholder="Ingresá el año..." required>
+                    </div>
+                    <div class="col-6 mx-auto mb-3">
+                        <label for="version" class="form-label">Versión</label>
+                        <input type="text" class="form-control" id="version" placeholder="Ingresá la versión..." required>
+                    </div>
+                    <div class="col-6 mx-auto mb-3">
+                        <label for="kilometros" class="form-label">Kilometraje</label>
+                        <input type="number" class="form-control" id="kilometros" placeholder="Ingresá el kilometraje..." required>
+                    </div>
+                    <div class="col-6 mx-auto mb-3">
+                        <div>
+                            <label class="form-label">Estado del interior</label>
+                        </div>
+                        <input class="form-check-input mx-1" type="radio" name="estado" id="estado" value="excelente">
+                        <label class="form-check-label me-3" for="exampleRadios1">Excelente</label>
+                        <input class="form-check-input mx-1" type="radio" name="estado" id="estado" value="bueno">
+                        <label class="form-check-label me-3" for="exampleRadios1">Bueno</label>
+                        <input class="form-check-input mx-1" type="radio" name="estado" id="estado" value="regular">
+                        <label class="form-check-label me-3" for="exampleRadios1">Regular</label>
+                    </div>
+                    <div class="col-6 mx-auto mb-3">
+                        <label for="subir_foto" class="form-label">Subir una foto para publicar</label>
+                        <input type="file" id="subir_foto" required>
+                    </div>
+                </div>
+                <div class="border border-primary bg-secondary text-white mb-2 rounded">
+                    <div class="col-6 mx-auto mb-3">
+                        <label for="nombre" class="form-label">Nombre completo y apellido</label>
+                        <input type="text" class="form-control" id="nombre" placeholder="Ingresá tu nombre y apellido..." required>
+                    </div>
+                    <div class="col-6 mx-auto mb-3">
+                        <label for="correo" class="form-label">Correo electrónico</label>
+                        <input type="text" class="form-control" id="correo" placeholder="Ingresá tu email..." required>
+                    </div>
+                    <div class="col-6 mx-auto mb-3">
+                        <label for="telefono" class="form-label">Teléfono</label>
+                        <input type="tel" class="form-control" id="telefono" placeholder="Ingresá tu teléfono con código de área..." required>
+                    </div>
+                    <div class="col-6 mx-auto mb-3">
+                        <label for="provincia" class="form-label">Provincia</label>
+                        <input type="text" class="form-control" id="provincia" placeholder="Ingresá la provincia donde resides..." required>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <button class="btn btn-primary mt-4 col-3" type="submit">Enviar</button>
+                    <button class="btn btn-secondary mt-4 col-3" type="reset">Descartar</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-logo logo">
+            <a href="../../index.html" title="Tu Usado - Ir al inicio">
+                <img src="../img/logoTU.png" alt="logo empresa" >
+            </a>
+        </div>
+        <div class="redes-sociales">
+            <ul>
+                <li>SEGUINOS EN</li>
+                <li><a href="https://www.instagram.com/" target="_blank">
+                    <i class="fas fa-brands fa-instagram"></i> /tuusado</a></li>
+                <li><a href="https://www.facebook.com/?locale=es_LA" target="_blank">
+                    <i class="fas fa-brands fa-facebook"></i> /tuusado</a></li>
+            </ul>
+        </div>
+        <div class="contacto">
+            <ul>
+                <li>CONTACTO</li>
+                <li><a href="mailto:tuusado@gmail.com">
+                    <i class="fas fa-regular fa-envelope"></i> tuusado@gmail.com</a></li>
+                <li><a href="https://api.whatsapp.com/send/?phone=5492235555555" target="_blank">
+                    <i class="fas fa-brands fa-whatsapp"></i> 223 5555 555</a></li>
+                <li><a href="tel:2235555555">
+                    <i class="fas fa-solid fa-phone"></i> 0223 555-5555</a></li>
+            </ul>
+        </div>
+    </footer>
+    <!-- scipt de js para bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" 
+        crossorigin="anonymous">
+    </script>
+</body>
+</html>
