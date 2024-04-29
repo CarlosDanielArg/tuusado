@@ -455,3 +455,57 @@ footer ul {
         justify-content: flex-start;
     }
 }
+
+/* Formulario para publicar un usado */
+/* Estilos para el formulario */
+form {
+    background-color: var(--color-fondo);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para los campos de entrada */
+.form-control {
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+/* Estilos para las etiquetas */
+.form-label {
+    color: var(--color-texto-oscuro);
+    margin-bottom: 5px;
+}
+
+/* Estilos para los botones */
+.btn-primary {
+    background-color: var(--color-fondo-botones);
+    border: none;
+    color: var(--color-texto-claro);
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: var(--color-fondo-botones-hover-main);
+    color: var(--color-texto-oscuro);
+}
+
+.btn-secondary {
+    background-color: var(--color-fondo-botones);
+    border: none;
+    color: var(--color-texto-claro);
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-secondary:hover {
+    background-color: var(--color-fondo-botones-hover-header);
+    color: var(--color-texto-oscuro);
+}
