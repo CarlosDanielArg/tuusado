@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/estilo.css">
+    <link rel="icon" href="../../favicon.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/fa04600604.js" crossorigin="anonymous"></script>
+    <title>Tu Usado</title>
+</head>
+<body>
+    <header>
+        <div class="header-logo logo">
+            <a href="../../index.html" title="Tu Usado - Ir al inicio">
+                <img src="../img/logoTU.png" alt="logo empresa" >
+            </a>
+        </div>
+        <nav class="header-menubar">
+            <ul>
+                <li><a href="#">Automóviles</a></li>
+                <li><a href="#">Camionetas</a> </li>
+                <li><a href="#">Utilitarios</a></li>
+                <li><a href="#">Motos</a></li>
+                <li><a href="./static/plantillas/publicar.html">Publica tu usado</a></li>
+            </ul>
+        </nav>
+        <nav class="header-menubar-desplegable">
+            <a href="#"><i class="fas fa-solid fa-bars"></i></a>
+            <ul class="contenido-desplegable">
+                <li><a href="#">Automóviles</a></li>
+                <li><a href="#">Camionetas</a> </li>
+                <li><a href="#">Utilitarios</a></li>
+                <li><a href="#">Motos</a></li>
+                <li><a href="#">Publica tu usado</a></li>
+            </ul>    
+        </nav>
+    </header>
+    <main>
+        <section class="ficha-datos-unidad">
+            <h2>Datos de la unidad</h2>
+            <div class="foto"> 
+                <img src="" alt="foto usado publicado" id="foto">
+            </div>
+            <div class="datos"> 
+                <p id="marca"></p>
+                <p id="modelo"></p>
+                <p id="kilometraje"></p>
+                <p id="version-anio"></p>
+                <p id="estado"></p>
+                <p id="precio"></p>
+            </div>
+        </section>
+        <section class="ficha-datos-titular">
+            <h2>Datos del titular</h2>
+            <div id="titular">
+                <p id="nombre"></p>
+                <p id="email"></p>
+                <p id="telefono"></p>
+                <p id="provincia"></p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-logo logo">
+            <a href="../../index.html" title="Tu Usado - Ir al inicio">
+                <img src="../img/logoTU.png" alt="logo empresa" >
+            </a>
+        </div>
+        <div class="redes-sociales">
+            <ul>
+                <li>SEGUINOS EN</li>
+                <li><a href="https://www.instagram.com/" target="_blank">
+                    <i class="fas fa-brands fa-instagram"></i> /tuusado</a></li>
+                <li><a href="https://www.facebook.com/?locale=es_LA" target="_blank">
+                    <i class="fas fa-brands fa-facebook"></i> /tuusado</a></li>
+            </ul>
+        </div>
+        <div class="contacto">
+            <ul>
+                <li>CONTACTO</li>
+                <li><a href="mailto:tuusado@gmail.com">
+                    <i class="fas fa-regular fa-envelope"></i> tuusado@gmail.com</a></li>
+                <li><a href="https://api.whatsapp.com/send/?phone=5492235555555" target="_blank">
+                    <i class="fas fa-brands fa-whatsapp"></i> 223 5555 555</a></li>
+                <li><a href="tel:2235555555">
+                    <i class="fas fa-solid fa-phone"></i> 0223 555-5555</a></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="../js/ficha.js"></script>
+</body>
+</html>
