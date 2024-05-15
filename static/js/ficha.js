@@ -330,13 +330,13 @@ document.getElementById("marca").innerText = usado.marca;
 document.getElementById("modelo").innerText = usado.modelo;
 document.getElementById("kilometraje").innerText = usado.kilometraje + " Km";
 document.getElementById("version-anio").innerText = usado.version + " | " + usado.anio;
-document.getElementById("estado").innerText = "Estado del interior: " + usado.estado;
+document.getElementById("estado").innerText = usado.estado;
 document.getElementById("precio").innerText = "u$s " + usado.precio;
 
 // Modifica los textos de los <p> para mostrar los datos del titular del usado publicado
-document.getElementById("nombre").innerText = "Nombre y Apellido: " + usado.nombre;
-document.getElementById("email").innerText = "Correo electrónico: " + usado.email;
-document.getElementById("telefono").innerText = "Teléfono: " + usado.telefono;
-document.getElementById("provincia").innerText = "Provincia: " + usado.provincia;
+document.getElementById("nombre").innerText = usado.nombre;
+document.getElementById("email").innerText = usado.email;
+document.getElementById("telefono").innerText = usado.telefono;
+document.getElementById("provincia").innerText = usado.provincia;
 
 
