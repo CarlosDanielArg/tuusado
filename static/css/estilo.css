@@ -509,3 +509,50 @@ form {
     background-color: var(--color-fondo-botones-hover-header);
     color: var(--color-texto-oscuro);
 }
+
+/* Estilos de la tarjeta */
+.ficha-tarjeta {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* Estilos de la foto */
+.foto {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.foto img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Estilos de los datos */
+.datos, #titular {
+    font-size: 16px;
+    color: #333;
+}
+
+.datos p, #titular p {
+    margin-bottom: 10px;
+}
+
+.datos p strong, #titular p strong {
+    margin-right: 5px;
+}
+
+/* Estilos del título */
+.ficha-datos-vehiculo h2, .ficha-datos-titular h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
