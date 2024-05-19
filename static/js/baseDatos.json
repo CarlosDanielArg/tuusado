@@ -78,7 +78,7 @@
             "nombre": "Guido Rodriguez",
             "email": "grodriguez@mail.com",
             "telefono": "555 563 6104",
-            "provincia": "Santa Fé"
+            "provincia": "Santa Fe"
         },
         {
             "id": 6,
@@ -126,7 +126,7 @@
             "nombre": "Lionel Messi",
             "email": "lmessi@mail.com",
             "telefono": "555 486 1010",
-            "provincia": "Santa Fé"
+            "provincia": "Santa Fe"
         },
         {
             "id": 9,
@@ -142,7 +142,7 @@
             "nombre": "Angel Di María",
             "email": "fideo@mail.com",
             "telefono": "555 606 6487",
-            "provincia": "Santa Fé"
+            "provincia": "Santa Fe"
         },
         {
             "id": 10,
@@ -254,7 +254,7 @@
             "nombre": "Giovani Lo Celso",
             "email": "giolocelso@mail.com",
             "telefono": "555 445 1126",
-            "provincia": "Santa Fé"
+            "provincia": "Santa Fe"
         },
         {
             "id": 17,
