@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/estilo.css">
+    <link rel="icon" href="../../favicon.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/fa04600604.js" crossorigin="anonymous"></script>
+    <title>Tu Usado</title>
+</head>
+<body>
+    <header>
+        <div class="header-logo logo">
+            <a href="../../index.html" title="Tu Usado - Ir al inicio">
+                <img src="../img/logoTU.png" alt="logo empresa" >
+            </a>
+        </div>
+        <nav class="header-menubar">
+            <ul>
+                <li><a href="./unidades.html?s=1">Automóviles</a></li>
+                <li><a href="./unidades.html?s=2">Camionetas</a> </li>
+                <li><a href="./unidades.html?s=3">Utilitarios</a></li>
+                <li><a href="./unidades.html?s=4">Motos</a></li>
+                <li><a href="./publicar.html">Publica tu usado</a></li>
+            </ul>
+        </nav>
+        <nav class="header-menubar-desplegable">
+            <a href="#"><i class="fas fa-solid fa-bars"></i></a>
+            <ul class="contenido-desplegable">
+                <li><a href="./unidades.html?s=1">Automóviles</a></li>
+                <li><a href="./unidades.html?s=2">Camionetas</a> </li>
+                <li><a href="./unidades.html?s=3">Utilitarios</a></li>
+                <li><a href="./unidades.html?s=4">Motos</a></li>
+                <li><a href="./publicar.html">Publica tu usado</a></li>
+            </ul>    
+        </nav>
+    </header>
+    <main>
+        <aside id="menu-lateral">
+            <p>Filtro por Provincia</p>
+            <select name="filtroProv" id="filtro-provincia">
+                <option value="todas">Todas</option>
+                <option value="Buenos Aires">Buenos Aires</option>
+                <option value="C.A.B.A.">Ciudad Autónoma de Buenos Aires</option>
+                <option value="Catamarca">Catamarca</option>
+                <option value="Chaco">Chaco</option>
+                <option value="Chubut">Chubut</option>
+                <option value="Córdoba">Córdoba</option>
+                <option value="Corrientes">Corrientes</option>
+                <option value="Entre Rios">Entre Ríos</option>
+                <option value="Formosa">Formosa</option>
+                <option value="Jujuy">Jujuy</option>
+                <option value="La Pampa">La Pampa</option>
+                <option value="La Rioja">La Rioja</option>
+                <option value="Mendoza">Mendoza</option>
+                <option value="Misiones">Misiones</option>
+                <option value="Neuquen">Neuquén</option>
+                <option value="Rio Negro">Río Negro</option>
+                <option value="Salta">Salta</option>
+                <option value="San Juan">San Juan</option>
+                <option value="San Luis">San Luís</option>
+                <option value="Santa Cruz">Santa Cruz</option>
+                <option value="Santa Fe">Santa Fe</option>
+                <option value="Santiago del Estero">Santiago del Estero</option>
+                <option value="Tierra del Fuego">Tierra del fuego</option>
+                <option value="Tucumán">Tucumán</option>
+            </select>
+        </aside>
+        <section id="lista-publicaciones">
+            <!-- Espacio para renderizar las publicaciones mediante js -->
+        </section>
+    </main>
+    <footer>
+        <div class="footer-logo logo">
+            <a href="../../index.html" title="Tu Usado - Ir al inicio">
+                <img src="../img/logoTU.png" alt="logo empresa" >
+            </a>
+        </div>
+        <div class="redes-sociales">
+            <ul>
+                <li>SEGUINOS EN</li>
+                <li><a href="https://www.instagram.com/" target="_blank">
+                    <i class="fas fa-brands fa-instagram"></i> /tuusado</a></li>
+                <li><a href="https://www.facebook.com/?locale=es_LA" target="_blank">
+                    <i class="fas fa-brands fa-facebook"></i> /tuusado</a></li>
+            </ul>
+        </div>
+        <div class="contacto">
+            <ul>
+                <li>CONTACTO</li>
+                <li><a href="mailto:tuusado@gmail.com">
+                    <i class="fas fa-regular fa-envelope"></i> tuusado@gmail.com</a></li>
+                <li><a href="https://api.whatsapp.com/send/?phone=5492235555555" target="_blank">
+                    <i class="fas fa-brands fa-whatsapp"></i> 223 5555 555</a></li>
+                <li><a href="tel:2235555555">
+                    <i class="fas fa-solid fa-phone"></i> 0223 555-5555</a></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="../js/leerBaseDatos.js"></script>
+    <script src="../js/unidades.js"></script>
+</body>
+</html>
