@@ -6,6 +6,7 @@
     --color-fondo-botones: #4348bd;
     --color-fondo-botones-hover-main: #5c5fb8;
     --color-fondo-botones-hover-header: #afb1f7;
+    --color-fondo-cotizaciones: rgba(68, 68, 68, 0.5);
 }
 
 * {
@@ -83,6 +84,21 @@ header, footer {
     transform: translateY(-2px);
 }
 
+/* estilo para la api de cotizaciones */
+#cotizacion {
+    background-color: var(--color-fondo-cotizaciones);
+    color: var(--color-texto-claro);
+    padding: 2px 5px;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 5px;
+    right: 8%;
+}
+
+.valor_dolar {
+    padding: 0 10px;
+}
 
 /* estilo del main */
 .banner {
