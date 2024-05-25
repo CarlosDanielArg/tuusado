@@ -84,7 +84,7 @@ header, footer {
     transform: translateY(-2px);
 }
 
-/* estilo para la api de cotizaciones */
+/* estilo para la api de cotizaciones 
 #cotizacion {
     background-color: var(--color-fondo-cotizaciones);
     color: var(--color-texto-claro);
@@ -98,7 +98,7 @@ header, footer {
 
 .valor_dolar {
     padding: 0 10px;
-}
+}*/
 
 /* estilo del main */
 .banner {
@@ -297,7 +297,7 @@ footer ul {
     }
 }
 
-@media only screen and (min-width: 451px) and (max-width: 755px) {
+@media only screen and (min-width: 451px) and (max-width: 785px) {
     .header-menubar {
         display: none;
     }
@@ -307,6 +307,7 @@ footer ul {
         align-items: center;
         padding-right: 2rem;
         position: relative;
+        z-index: 100;
     }
 
     .header-menubar-desplegable a {
@@ -402,6 +403,7 @@ footer ul {
         align-items: center;
         padding-right: 2rem;
         position: relative;
+        z-index: 100;
     }
 
     .header-menubar-desplegable a {
@@ -605,13 +607,14 @@ form {
 #cotizacion {
     background-color: var(--color-fondo-cotizaciones);
     color: var(--color-texto-claro);
+    top: 30px;
     padding: 10px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-top: 20px; /* Ajusta el margen superior según sea necesario */
     position: fixed;
     right: 20px;
-    z-index: 9999; /* Asegura que esté por encima de otros elementos */
+    z-index: 10; /* Asegura que esté por encima de otros elementos */
     max-width: 300px; /* Ancho máximo del contenedor */
     display: flex; /* Utiliza flexbox para los elementos internos */
     flex-wrap: wrap; /* Permitir que los elementos se envuelvan */
@@ -669,7 +672,7 @@ form {
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         font-size: 0.8rem;
         text-align: right;
-        z-index: 9999;
+        z-index: 10;
     }
 }
 
