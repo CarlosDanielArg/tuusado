@@ -1,5 +1,4 @@
 fetch("https://dolarapi.com/v1/dolares")
-
 .then((response) => response.json())
 .then((data) => {
     // el Json que devuelve la api contiene las distintas cotizaciones del dolar.
@@ -7,11 +6,19 @@ fetch("https://dolarapi.com/v1/dolares")
     // en el índice 1 los datos del dólar informal
     // en los siguientes índices otros tipos de dólares como el Mep, el contado con liq. y el tarjeta
     // nosotros solo usaremos los dos primeros para mostrar el valor para la compra y para la venta.
-    document.getElementById("oficial").innerText = "Dólar BNA: " + data[0].compra + " / " + data[0].venta + '\u00A0' ;
-    document.getElementById("informal").innerText = "Dólar informal: " + data[1].compra + " / " + data[1].venta;
+    document.getElementById("oficial").innerHTML = `
+    <span class="valor_dolar">
+        <span class="bna"></span> Dólar BNA: 
+        <span class="compra">${data[0].compra.toFixed(2)}</span> / 
+        <span class="venta">${data[0].venta.toFixed(2)}</span>
+    </span>`;
+document.getElementById("informal").innerHTML = `
+    <span class="valor_dolar">
+        <span class="informal"></span> Dólar informal: 
+        <span class="compra">${data[1].compra.toFixed(2)}</span> / 
+        <span class="venta">${data[1].venta.toFixed(2)}</span>
+    </span>`;
 })
 .catch(function(error) {
     console.error(error);
-})
-
-
+});

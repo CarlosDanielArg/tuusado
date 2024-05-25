@@ -601,4 +601,78 @@ form {
     border-radius: 5px; /* Borde redondeado */
 }
 
+/* Estilos para el contenedor de cotizaciones */
+#cotizacion {
+    background-color: var(--color-fondo-cotizaciones);
+    color: var(--color-texto-claro);
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px; /* Ajusta el margen superior según sea necesario */
+    position: fixed;
+    right: 20px;
+    z-index: 9999; /* Asegura que esté por encima de otros elementos */
+    max-width: 300px; /* Ancho máximo del contenedor */
+    display: flex; /* Utiliza flexbox para los elementos internos */
+    flex-wrap: wrap; /* Permitir que los elementos se envuelvan */
+    justify-content: center; /* Centra los elementos horizontalmente */
+    font-size: 0.9rem; /* Tamaño de letra para dispositivos móviles */
+}
+
+/* Estilos para los valores de cotización */
+.valor_dolar {
+    margin-bottom: 5px; /* Espacio entre los valores */
+    font-size: 1rem; /* Tamaño de letra para PC */
+    display: flex; /* Utiliza flexbox para los elementos internos */
+    align-items: center; /* Alinea verticalmente los elementos */
+}
+
+/* Estilos para el ícono de Dólar BNA */
+.bna::before {
+    content: "💵 "; /* Ícono de Dólar BNA */
+    margin-right: 5px; /* Espacio entre el ícono y el importe */
+    color: black; /* Color del ícono de Dólar BNA */
+}
+
+/* Estilos para el ícono de Dólar Informal */
+.informal::before {
+    content: "💰 "; /* Ícono de Dólar Informal */
+    margin-right: 5px; /* Espacio entre el ícono y el importe */
+    color: black; /* Color del ícono de Dólar Informal */
+}
+
+/* Estilos para el importe de compra */
+.compra {
+    color: green; /* Color verde para el importe de compra */
+    font-weight: bold; /* Texto en negrita */
+}
+
+/* Estilos para el importe de venta */
+.venta {
+    color: red; /* Color rojo para el importe de venta */
+    font-weight: bold; /* Texto en negrita */
+}
+
+/* Consulta de medios para dispositivos móviles */
+@media only screen and (max-width: 600px) {
+    #cotizacion_mobile {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        width: calc(100% - 40px);
+        max-height: 80px;
+        overflow-y: auto;
+        background-color: var(--color-fondo-cotizaciones);
+        color: var(--color-texto-claro);
+        padding: 10px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        font-size: 0.8rem;
+        text-align: right;
+        z-index: 9999;
+    }
+}
+
+
+
 
