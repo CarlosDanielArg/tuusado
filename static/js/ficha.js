@@ -1,3 +1,14 @@
+/*
+ * autor: Grupo 8
+ * integrantes: Ignacio Flores, Juan Mercado, Juan José Scialfa y Carlos Musso
+ * version:
+ * fecha: 
+ * El siguiente script sirve a ficha.html y se encarga de cargar los datos de baseDatos.json
+ * la cotizacionesdel dolar de dolarapi.com.
+ * Y segun el número id de la publicación pasado en la url, se cargan todos los datos
+ * del vehículo al cual se le solicitó mas información
+ */
+
 // toma los parametros que se pasaron en la url
 const direccionUrl = new URL(location.href);
 const parametroUrl = direccionUrl.searchParams.get("s").toLowerCase();

@@ -1,3 +1,13 @@
+/*
+ * autor: Grupo 8
+ * integrantes: Ignacio Flores, Juan Mercado, Juan José Scialfa y Carlos Musso
+ * version:
+ * fecha: 
+ * El siguiente script sirve a unidades.html y se encarga de cargar los datos de baseDatos.json
+ * y de mostrar las publicaciones acorde al filtro de provincia elegido en el select 
+ * y al tipo de vehículo que vino como parámetro en la url
+ */
+
 function leerBaseDatos(parametroUrl, filtroProvincia) {
     let urlJson = "../js/baseDatos.json";
 

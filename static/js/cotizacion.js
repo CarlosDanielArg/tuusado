@@ -1,3 +1,14 @@
+/*
+ * autor: Grupo 8
+ * integrantes: Ignacio Flores, Juan Mercado, Juan José Scialfa y Carlos Musso
+ * version:
+ * fecha: 
+ * El siguiente script sirve a index.html y se conecta a dolarapi.com
+ * para traer los valores de compra y venta del dolar oficial y el informal
+ * que se muestra en la pantalla
+ */
+
+
 fetch("https://dolarapi.com/v1/dolares")
 .then((response) => response.json())
 .then((data) => {

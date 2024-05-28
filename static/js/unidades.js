@@ -1,3 +1,12 @@
+/*
+ * autor: Grupo 8
+ * integrantes: Ignacio Flores, Juan Mercado, Juan José Scialfa y Carlos Musso
+ * version:
+ * fecha: 
+ * El siguiente script sirve a unidades.html y se encarga de traer las cotizaciones del dolar de dolarapi.com,
+ * y de capturar cambios en el select de provincias para llamar al script que filtra las provincias
+ */
+
 // toma los parametros que se pasaron en la url
 const direccionUrl = new URL(location.href);
 const parametroUrl = direccionUrl.searchParams.get("s").toLowerCase();
